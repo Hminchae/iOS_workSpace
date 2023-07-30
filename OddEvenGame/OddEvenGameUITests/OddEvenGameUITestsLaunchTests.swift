@@ -2,7 +2,7 @@
 //  OddEvenGameUITestsLaunchTests.swift
 //  OddEvenGameUITests
 //
-//  Created by 황민채 on 2023/07/28.
+//  Created by 황민채 on 2023/07/30.
 //
 
 import XCTest
