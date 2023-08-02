@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  OddEvenGame
 //
-//  Created by 황민채 on 2023/07/30.
+//  Created by 황민채 on 2023/08/02.
 //
 
 import UIKit
