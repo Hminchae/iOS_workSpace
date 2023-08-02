@@ -16,46 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zxK-xv-K2m">
-                                <rect key="frame" x="10" y="375.33333333333331" width="410" height="181.66666666666669"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaR-au-EDB">
-                                        <rect key="frame" x="0.0" y="0.0" width="410" height="20.333333333333332"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은 구슬갯수 : 10개" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avJ-ic-NL7">
-                                        <rect key="frame" x="0.0" y="40.333333333333371" width="410" height="20.333333333333329"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결과화면" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5v-aH-Xxb">
-                                        <rect key="frame" x="0.0" y="80.666666666666686" width="410" height="20.333333333333329"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은 구슬갯수: 10개" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV9-je-xXd">
-                                        <rect key="frame" x="0.0" y="120.99999999999999" width="410" height="20.333333333333329"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V02-GF-XRK">
-                                        <rect key="frame" x="0.0" y="161.33333333333331" width="410" height="20.333333333333343"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcD-U8-xOp">
                                 <rect key="frame" x="0.0" y="848" width="430" height="50"/>
                                 <constraints>
@@ -67,21 +27,79 @@
                                     <action selector="gameStarPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pwn-na-usS"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="zxK-xv-K2m">
+                                <rect key="frame" x="0.0" y="59" width="430" height="789"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Computer" translatesAutoresizingMaskIntoConstraints="NO" id="j6R-yO-POm">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="258.33333333333331"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="X9j-dg-iBF">
+                                        <rect key="frame" x="0.0" y="265.33333333333337" width="430" height="258.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은 구슬갯수 : 10개" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avJ-ic-NL7">
+                                                <rect key="frame" x="0.0" y="0.0" width="430" height="82"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결과화면" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5v-aH-Xxb">
+                                                <rect key="frame" x="0.0" y="88" width="430" height="82.333333333333314"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은 구슬갯수: 10개" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV9-je-xXd">
+                                                <rect key="frame" x="0.0" y="176.33333333333337" width="430" height="82"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="sDv-1C-5om">
+                                        <rect key="frame" x="0.0" y="530.66666666666663" width="430" height="258.33333333333337"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVh-zj-4fn">
+                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fist" translatesAutoresizingMaskIntoConstraints="NO" id="3Iv-yB-IxZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="839"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3Iv-yB-IxZ" secondAttribute="bottom" id="0DF-dI-SPa"/>
+                                    <constraint firstItem="3Iv-yB-IxZ" firstAttribute="leading" secondItem="oVh-zj-4fn" secondAttribute="leading" id="IKq-pX-pAZ"/>
+                                    <constraint firstItem="3Iv-yB-IxZ" firstAttribute="top" secondItem="oVh-zj-4fn" secondAttribute="top" id="cNO-JY-eJz"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Iv-yB-IxZ" secondAttribute="trailing" id="dBm-EH-Ip4"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zxK-xv-K2m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F76-fq-Mfe"/>
+                            <constraint firstItem="bcD-U8-xOp" firstAttribute="top" secondItem="zxK-xv-K2m" secondAttribute="bottom" id="5BV-t2-nkr"/>
+                            <constraint firstItem="oVh-zj-4fn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Diu-75-KFl"/>
                             <constraint firstItem="bcD-U8-xOp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MYC-85-EzQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zxK-xv-K2m" secondAttribute="trailing" id="QSy-Ty-pKQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bcD-U8-xOp" secondAttribute="trailing" id="SQq-g7-mzb"/>
-                            <constraint firstItem="zxK-xv-K2m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Syw-2p-B3g"/>
-                            <constraint firstItem="zxK-xv-K2m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fjf-H3-ZS4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zxK-xv-K2m" secondAttribute="trailing" constant="10" id="jLk-sZ-v1D"/>
+                            <constraint firstItem="zxK-xv-K2m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WcK-Or-VdE"/>
+                            <constraint firstItem="oVh-zj-4fn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="afj-dE-1y3"/>
+                            <constraint firstItem="zxK-xv-K2m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dM2-Ln-WIg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bcD-U8-xOp" secondAttribute="bottom" id="md0-ZT-LdJ"/>
+                            <constraint firstItem="bcD-U8-xOp" firstAttribute="bottom" secondItem="oVh-zj-4fn" secondAttribute="bottom" id="v74-Ue-gsA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oVh-zj-4fn" secondAttribute="trailing" id="zdg-59-vss"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="computerBallCountLbl" destination="avJ-ic-NL7" id="VXc-4b-x0J"/>
+                        <outlet property="firstImage" destination="3Iv-yB-IxZ" id="XBQ-YC-IBU"/>
+                        <outlet property="imageContainer" destination="oVh-zj-4fn" id="UZb-7r-Boi"/>
                         <outlet property="resultLbl" destination="W5v-aH-Xxb" id="L5e-NE-XxJ"/>
                         <outlet property="userBallCountLbl" destination="lV9-je-xXd" id="lEZ-ca-1vy"/>
                     </connections>
@@ -92,9 +110,9 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="Computer" width="192.33332824707031" height="144.33332824707031"/>
+        <image name="User" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="fist" width="170.66667175292969" height="170.66667175292969"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
