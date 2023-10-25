@@ -102,11 +102,11 @@ class ViewController: UIViewController {
             return balls == 0
         }
         func calculateBalls(winner : String, count: Int){
-            if winner == "Computer" {
+            if winner == "순심" {
                 self.userBallCount = self.userBallCount - count
                 self.comBallCount = self.comBallCount + count
                 if self.checkAccountEmpty(balls: self.userBallCount){
-                    self.resultLbl.text = "순심이기 이겼다!"
+                    self.resultLbl.text = "순심이가 이겼다!"
                 }
             }else{
                 self.userBallCount = self.userBallCount + count
