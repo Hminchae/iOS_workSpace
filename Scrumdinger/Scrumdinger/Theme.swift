@@ -2,7 +2,7 @@
 //  Theme.swift
 //  Scrumdinger
 //
-//  Created by 황민채 on 10/26/23.
+//  Created by 황민채 on 11/8/23.
 //
 
 import SwiftUI
@@ -33,5 +33,8 @@ enum Theme: String {
     }
     var mainColor: Color {
         Color(rawValue)
+    }
+    var name: String {
+        rawValue.capitalized
     }
 }
